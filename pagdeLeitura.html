@@ -9,16 +9,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        .navbar {
+            background-color: #343a40; /* Fundo da navbar */
+            height: 120px;
+        }
         .navbar-brand {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
         }
+        .navbar-nav .nav-link {
+            color: #fff; /* Cor do texto da navbar: branco */
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: white; /* Cor de fundo ao passar o mouse: cinza claro */
+            color: #343a40; /* Cor do texto ao passar o mouse: a mesma do fundo */
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
-        <a href="index.html"><img href="index.html" src="fotos\download-removebg-preview (2).png" class="logo"></a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="fotos/download-removebg-preview (2).png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <div class="container mt-4">
         <h1 class="article-title">Ametista do Sul: Uma Jornada Pelas Maravilhas Naturais e Culturais</h1>

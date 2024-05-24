@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventure Blog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar {
+            background-color: #343a40; /* Fundo da navbar */
+            height: 120px;
+        }
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .navbar-nav .nav-link {
+            color: #fff; /* Cor do texto da navbar: branco */
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: white; /* Cor de fundo ao passar o mouse: cinza claro */
+            color: #343a40; /* Cor do texto ao passar o mouse: a mesma do fundo */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
-        <a href=""><img href="index.html" src="fotos\download-removebg-preview (2).png" class="logo"></a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="fotos/download-removebg-preview (2).png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
     <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel" style="width: 100%; max-width: 760px;">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="fotos\catedral.jpeg" class="d-block w-100" alt="..." style="max-width: 100%; max-height: 100%;">
+                <img src="fotos/catedral.jpeg" class="d-block w-100" alt="..." style="max-width: 100%; max-height: 100%;">
             </div>
             <div class="carousel-item">
-                <img src="fotos\mercadopublico.jpg" class="d-block w-100" alt="..." style="max-width: 100%; max-height: 100%;">
+                <img src="fotos/mercadopublico.jpg" class="d-block w-100" alt="..." style="max-width: 100%; max-height: 100%;">
             </div>
             <div class="carousel-item">
-                <img src="fotos\templo.jpg" class="d-block w-100" alt="..." style="max-width: 100%; max-height: 100%;">
+                <img src="fotos/templo.jpg" class="d-block w-100" alt="..." style="max-width: 100%; max-height: 100%;">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -37,25 +77,23 @@
         </button>
     </div>
     
-    
-
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <img src="fotos\ametista2.jpg" class="card-img-top" alt="...">
+                            <img src="fotos/ametista2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title"><b>Ametista do Sul</b>: Uma Jornada Pelas Maravilhas Naturais e Culturais</h5>
                                 <p class="card-text">Descubra os Segredos Ocultos dessa Gema Gaúcha e Seu Fascinante Mundo de Mineração, História e Belezas Naturais</p>
-                                <a href="pagdeLeitura.html">Ler Mais!</a>
+                                <a href="pagdeLeitura.html" class="btn btn-primary">Ler Mais!</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-12 mt-3">
                         <div class="card">
-                            <img src="fotos\lagobernardo.png" class="card-img-top" alt="...">
+                            <img src="fotos/lagobernardo.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">O Sereno Encanto do Lago São Bernardo: Uma Jornada Tranquila Pelas Águas Cristalinas e Paisagens Serenas</h5>
                                 <p class="card-text">Navegue pela Calmaria e Deslumbre-se com a Beleza Natural deste Refúgio Idílico na Serra Gaúcha</p>
@@ -64,7 +102,7 @@
                     </div>
                     <div class="col-md-12 mt-3">
                         <div class="card">
-                            <img src="fotos\canion-cambara-do-sul.jpg" class="card-img-top" alt="...">
+                            <img src="fotos/canion-cambara-do-sul.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Explorando a Grandeza Natural: Uma Aventura Pelas Profundezas do Cânion do Itaimbezinho</h5>
                                 <p class="card-text">Explorando a Grandeza Natural: Uma Aventura Pelas Profundezas do Cânion do Itaimbezinho</p>
@@ -77,7 +115,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <img src="fotos\cascata-do-caracol.jpg" class="card-img-top" alt="...">
+                            <img src="fotos/cascata-do-caracol.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Parque do Caracol: Uma Aventura Pelas Cachoeiras e Trilhas da Serra Gaúcha</h5>
                                 <p class="card-text">Explore a Natureza Exuberante e as Paisagens Deslumbrantes deste Destino Imperdível no Coração do Brasil</p>
@@ -86,7 +124,7 @@
                     </div>
                     <div class="col-md-12 mt-3">
                         <div class="card">
-                            <img src="fotos\saomiguel.jpg" class="card-img-top" alt="...">
+                            <img src="fotos/saomiguel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Entre as Pedras e Histórias: Descobrindo as Ruínas de São Miguel</h5>
                                 <p class="card-text">Um Passeio Pelas Marcas do Tempo e da Fé, Onde Ruínas Contam Histórias de um Passado Intrigante</p>
@@ -95,10 +133,10 @@
                     </div>
                     <div class="col-md-12 mt-3">
                         <div class="card">
-                            <img src="fotos\usina.jpg" class="card-img-top" alt="...">
+                            <img src="fotos/usina.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Revolução Cultural à Beira do Guaíba: Conhecendo a História e a Arte da Usina do Gasômetro</h5>
-                                <p class="card-text">"Do Passado Industrial ao Presente Cultural: Explore um Ícone de Porto Alegre, Onde a Energia se Transforma em Inspiração</p>
+                                <p class="card-text">Do Passado Industrial ao Presente Cultural: Explore um Ícone de Porto Alegre, Onde a Energia se Transforma em Inspiração</p>
                             </div>
                         </div>
                     </div>
@@ -113,6 +151,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
